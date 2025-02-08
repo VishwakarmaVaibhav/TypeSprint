@@ -46,18 +46,19 @@ const TypingEvaluation = () => {
                 <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
                     {menuOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
-                <nav className={`absolute md:relative top-12 right-0 bg-blue-600 p-4 md:p-0 md:flex md:static ${menuOpen ? 'block' : 'hidden'}`}>
-    <Link to="/round1" className="mx-2 px-4 py-2 bg-gray-800 text-white rounded block md:inline">Round 1</Link>
-    <Link to="/round2" className="mx-2 px-4 py-2 bg-gray-800 text-white rounded block md:inline">Round 2</Link>
-    <Link to="/final" className="mx-2 px-4 py-2 bg-gray-800 text-white rounded block md:inline">Final</Link>
-</nav>
+                <nav className={`absolute md:relative top-12 right-0 bg-blue-600  rounded-bl-lg p-4  md:p-0 md:flex md:static ${menuOpen ? 'block' : 'hidden'}`}>
+                    <Link to="/round1" className="mx-2 px-4 py-2 my-2 bg-gray-800 text-white rounded block md:inline md:mr-2">Round 1</Link>
+                    <Link to="/round2" className="mx-2 px-4 py-2 my-2 bg-gray-800 text-white rounded block md:inline md:mr-2">Round 2</Link>
+                    <Link to="/final" className="mx-2 px-4 py-2 my-2 bg-gray-800 text-white rounded block md:inline">Final</Link>
+                </nav>
 
             </header>
 
         <div className="  bg-gray-100 min-h-screen">
             
            
-            <h1 className="text-3xl font-extrabold pt-6 text-center mb-6 animate-fade-in">Typing Speed Evaluation Round-1</h1>
+            <h1 className="text-3xl font-extrabold pt-6 text-center  animate-fade-in">Typing Speed Evaluation Round-1</h1>
+            <p className="text-gray-600 text-center mb-6">Only the top 10 from each batch qualify.</p>
             <div className="flex flex-wrap gap-4 justify-center mb-6 animate-slide-in">
                 <input className="border p-2 rounded shadow-sm" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
                 <select className="border p-2 rounded shadow-sm" value={classLevel} onChange={(e) => setClassLevel(e.target.value)}>

@@ -45,10 +45,10 @@ const TypingEvaluationRound3 = () => {
                 <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
                     {menuOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
-                <nav className={`absolute md:relative top-12 right-0 bg-blue-600 p-4 md:p-0 md:flex md:static ${menuOpen ? 'block' : 'hidden'}`}>
-                    <Link to="/round1" className="mx-2 px-4 py-2 bg-gray-800 text-white rounded block md:inline">Round 1</Link>
-                    <Link to="/round2" className="mx-2 px-4 py-2 bg-gray-800 text-white rounded block md:inline">Round 2</Link>
-                    <Link to="/final" className="mx-2 px-4 py-2 bg-gray-800 text-white rounded block md:inline">Final</Link>
+                <nav className={`absolute md:relative top-12 right-0 bg-blue-600  rounded-bl-lg p-4  md:p-0 md:flex md:static ${menuOpen ? 'block' : 'hidden'}`}>
+                    <Link to="/round1" className="mx-2 px-4 py-2 my-2 bg-gray-800 text-white rounded block md:inline md:mr-2">Round 1</Link>
+                    <Link to="/round2" className="mx-2 px-4 py-2 my-2 bg-gray-800 text-white rounded block md:inline md:mr-2">Round 2</Link>
+                    <Link to="/final" className="mx-2 px-4 py-2 my-2 bg-gray-800 text-white rounded block md:inline">Final</Link>
                 </nav>
             </header>
 
