@@ -137,7 +137,7 @@ const TypingEvaluation = () => {
                 </div>
             ))}
              <footer className="bg-gray-800 text-white text-center p-4 mt-auto w-full fixed bottom-0">
-                Follow <a href="https://github.com/VaibhavVishwakarma" className="text-blue-400 underline">this guy</a> for more!
+                Follow <a href="https://github.com/VishwakarmaVaibhav" className="text-blue-400 underline">this guy</a> for more!
             </footer>
         </div>
         </div>
