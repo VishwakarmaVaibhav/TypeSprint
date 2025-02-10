@@ -109,7 +109,7 @@ const TypingEvaluationRound3 = () => {
                     <CSVLink data={batch.results} filename={`batch_${batch.batchNumber}_typing_final.csv`} className="bg-blue-500 text-white py-2 px-4 rounded shadow-md mt-2 inline-block">Download CSV</CSVLink>
                 </div>
             ))}
-              <footer className="bg-gray-800 text-white text-center p-4 mt-auto w-full fixed bottom-0">
+              <footer className="bg-gray-800 text-white text-center p-4 mt-auto w-full  bottom-0">
                 Follow <a href="https://github.com/VishwakarmaVaibhav" className="text-blue-400 underline">this guy</a> for more!
             </footer>
         </div>
